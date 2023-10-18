@@ -1,6 +1,7 @@
 /* mobile devices */
 @media screen and (max-width:576px) {
     header {
+        margin-top: 50px;
         padding: 0;
         background-image: none;
     }
@@ -16,7 +17,7 @@
     .banner {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 100px;
+        gap: 50px;
     }
 
     .banner-title,
@@ -33,6 +34,7 @@
     .banner-description {
         text-align: center;
         width: 100%;
+        margin: 20px auto;
     }
 
     .logos-img-container {
@@ -41,6 +43,29 @@
         /* width: 70%; */
         gap: 30px;
         margin: 0 auto;
+        background: none;
+        padding: 0;
+    }
+
+    .items-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* max- width: 390px; */
+    }
+
+    .features-container {
+        flex-direction: column-reverse;
+
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .features-container>img {
+        width: 100%;
+    }
+
+    footer {
+        background: none;
+        color: black;
     }
 }
 
@@ -52,4 +77,15 @@
     .banner {
         flex-direction: column;
     }
+
+    .features-container {
+        gap: 50px;
+        padding: 0px 10px;
+    }
+
+    .items-container {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
 }
